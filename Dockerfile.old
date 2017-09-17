@@ -1,0 +1,4 @@
+FROM sebp/elk:551
+RUN wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-5.1.1-linux-x86_64.tar.gz && tar xvzf filebeat-5.1.1-linux-x86_64.tar.gz
+WORKDIR filebeat-5.1.1-linux-x86_64
+RUN  

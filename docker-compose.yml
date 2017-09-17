@@ -1,0 +1,17 @@
+version: '2'
+services:
+ elk_1:
+  build: .
+  container_name: elk_1
+  ports: 
+   - "5601"
+   - "9200"
+   - "5044"
+  networks:
+   - wpredis_default
+   - default
+
+networks:
+ wpredis_default:
+  external: true 
+

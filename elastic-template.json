@@ -1,0 +1,32 @@
+ "template" : "sample*",
+    "mappings" : {
+      "sample" : {
+		"properties": {
+			"@timestamp":{"type":"date","format":"dateOptionalTime"},
+			"cs_ip":{"type":"string"},
+			"cs_method":{"type":"keyword"},
+			"ssl_version":{"type":"string"},
+			"cs_uri":{"type":"string"},
+			"sc_status":{"type":"string"},
+			"sc_content_bytes":{"type":"long"},
+			"sc_total_bytes":{"type":"long"},
+			"s_object_size":{"type":"long"},
+			"s_uncompressed_size":{"type":"long"},
+			"http_overhead_bytes":{"type":"long"},
+			"cs_referrer":{"type":"string"},
+			"cs_useragent":{"type":"string"},
+			"cs_cookie":{"type":"string"},
+			"cs_host":{"type":"string"},
+			"cs_contenttype":{"type":"string"},
+			"time_ssloverhead":{"type":"long"},
+			"time_turnaround":{"type":"string"},
+			"time_transfer":{"type":"string"},
+			"request_id":{"type":"string"},
+			"max_age":{"type":"string"},
+			"cache_status":{"type":"string"},
+			"cache_refresh_source":{"type":"string"},
+			"last_byte_served_flag":{"type":"boolean"},
+			"no_store_flag":{"type":"boolean"},
+		}
+      }
+    }
